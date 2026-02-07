@@ -86,6 +86,7 @@
 
 .main {
   position: relative;
+  overflow-x: hidden;
 }
 
 .hero__content {
@@ -173,8 +174,7 @@
 
 .hero__img {
   margin: 0 170px;
-  /* padding: 0 400px; */
-  /* width: 50%; */
+
   border-radius: 15px;
   position: relative;
   top: 80px;
@@ -205,15 +205,12 @@
 }
 
 .highlights__text {
-  /* color: lab(2.42579 -0.165291 -0.470081 / 0.8); */
   color: var(--text-muted);
   font-weight: 500;
   text-align: center;
   width: 38%;
   margin: 0 auto;
 }
-
-/* features */
 
 .features {
   margin: 0 208px;
@@ -265,7 +262,6 @@
 
 .ui {
   margin: 10px auto;
-  /* border: 1px solid ; */
   border: 1px solid lab(2.42579 -0.165291 -0.470081 / 0.07);
   padding: 20px;
   border-radius: 20px;
@@ -294,8 +290,6 @@
   font-weight: 500;
   font-size: 1rem;
 }
-
-/* enterprise */
 
 .enterprise {
   margin-top: 130px;
@@ -474,17 +468,20 @@
   row-gap: 50px;
   margin-top: 50px;
   align-items: center;
+  /* position: relative; */
+  /* overflow-x: hidden; */
 }
 
 .reviews__container {
   display: flex;
   column-gap: 15px;
+
   position: relative;
-  left: 250px;
+  right: -270px;
 }
 
 .card {
-  width: 50%;
+  width: 300px;
   position: relative;
   border-radius: 20px;
   display: flex;
@@ -496,7 +493,7 @@
 
 .card__img {
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   border-radius: 20px;
   background-repeat: no-repeat;
   background-size: cover;
